@@ -102,7 +102,7 @@
 		  </li>	
 		  @php 
 			
-			$id = Auth::user()->id;
+			$id = Auth::user()?->id;
         	$adminData = App\Models\Admin::find($id);
 
 		  @endphp
